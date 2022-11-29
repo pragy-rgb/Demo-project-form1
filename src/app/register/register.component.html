@@ -12,8 +12,8 @@
           [(ngModel)]="User.fullName"
         />
       </mat-form-field>
-      <br>
-      <br>
+      <br />
+      <br />
 
       <mat-form-field class="width-100" appearance="fill">
         <mat-label>Phone Number</mat-label>
@@ -26,8 +26,8 @@
           [(ngModel)]="User.phoneNumber"
         />
       </mat-form-field>
-      <br>
-      <br>
+      <br />
+      <br />
       <mat-form-field class="width-100" appearance="fill">
         <mat-label>Email Address</mat-label>
         <input
@@ -38,18 +38,25 @@
           name="emailAddress"
           [(ngModel)]="User.emailAddress"
         />
-        <br>
-        <br>
-        <button mat-button [matMenuTriggerFor]="hobby">Hobby</button>
-        <mat-menu #hobby="matMenu">
-          <button mat-menu-item>Singing</button>
-          <button mat-menu-item>Dancing</button>
-          <button mat-menu-item>Cooking</button>
-          <button mat-menu-item>Reading</button>
-        </mat-menu>
       </mat-form-field>
-      <br>
-      <br>
+      <br />
+      <br />
+      <button mat-button [matMenuTriggerFor]="hobby">Hobby</button>
+      <mat-menu #hobby="matMenu">
+        <button mat-menu-item>Singing</button>
+        <button mat-menu-item>Dancing</button>
+        <button mat-menu-item>Cooking</button>
+        <button mat-menu-item>Reading</button>
+      </mat-menu>
+
+      <br />
+      <br />
+      <mat-radio-group aria-label="Select an option">
+        <mat-radio-button value="1" isChecked>Male</mat-radio-button>
+        <mat-radio-button value="2">Female</mat-radio-button>
+      </mat-radio-group>
+      <br />
+      <br />
       <mat-form-field class="width-100" appearance="fill">
         <mat-label>Password</mat-label>
         <input
@@ -61,8 +68,8 @@
           [(ngModel)]="User.password"
         />
       </mat-form-field>
-      <br>
-      <br>
+      <br />
+      <br />
 
       <mat-form-field class="width-100" appearance="fill">
         <mat-label>Re-Password</mat-label>
@@ -75,8 +82,8 @@
           [(ngModel)]="User.rPassword"
         />
       </mat-form-field>
-      <br>
-      <br>
+      <br />
+      <br />
       <div>
         <a mat-raised-button style="margin: 5px" color="accent">Register</a>
       </div>

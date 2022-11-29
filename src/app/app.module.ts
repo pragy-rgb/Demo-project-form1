@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { RegisterComponent } from './register/register.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatRadioModule } from '@angular/material/radio';
 
 @NgModule({
   declarations: [AppComponent, RegisterComponent],
@@ -23,6 +24,7 @@ import { MatMenuModule } from '@angular/material/menu';
     MatInputModule,
     MatCardModule,
     MatMenuModule,
+    MatRadioModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
