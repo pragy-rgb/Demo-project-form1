@@ -4,4 +4,5 @@ export class User {
   phoneNumber!: String;
   password!: string;
   rPassword!: string;
+  hobby: string;
 }

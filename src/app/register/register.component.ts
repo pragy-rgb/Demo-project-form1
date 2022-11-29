@@ -13,6 +13,7 @@ export class RegisterComponent implements OnInit {
   phoneNumber!: String;
   password!: string;
   rPassword!: string;
+  hobby!: string;
   constructor() {
     this.User = {
       fullName: 'Pragya',
@@ -20,6 +21,7 @@ export class RegisterComponent implements OnInit {
       phoneNumber: '8448778888',
       password: 'pragya123',
       rPassword: 'pragya123',
+      hobby: 'Dancing',
     };
   }
 

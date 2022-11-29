@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 
 import { RegisterComponent } from './register/register.component';
 import { MatCardModule } from '@angular/material/card';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [AppComponent, RegisterComponent],
@@ -21,6 +22,7 @@ import { MatCardModule } from '@angular/material/card';
     MatFormFieldModule,
     MatInputModule,
     MatCardModule,
+    MatMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
