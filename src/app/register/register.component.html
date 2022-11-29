@@ -1,0 +1,66 @@
+<mat-card>
+  <mat-card-title>Registration</mat-card-title>
+  <mat-card-content>
+    <form class="example-form" #registrationform="ngForm">
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Full name</mat-label>
+        <input
+          matInput
+          placeholder="Full name"
+          required
+          name="fullname"
+          ngModel
+        />
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Phone Number</mat-label>
+        <input
+          matInput
+          placeholder="Phone number"
+          required
+          type="number"
+          name="phoneNumber"
+          ngModel
+        />
+      </mat-form-field>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Email Address</mat-label>
+        <input
+          matInput
+          placeholder="Email Address"
+          required
+          type="email"
+          name="emailAddress"
+          ngModel
+        />
+      </mat-form-field>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Password</mat-label>
+        <input
+          matInput
+          placeholder="Password"
+          required
+          type="password"
+          name="password"
+          ngModel
+        />
+      </mat-form-field>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Re-Password</mat-label>
+        <input
+          matInput
+          placeholder="Re-type Password"
+          required
+          type="password"
+          name="password"
+          ngModel
+        />
+      </mat-form-field>
+      <div>
+        <button mat-raised-button type="submit" color="primary">Login</button>
+        <a mat-raised-button style="margin: 5px" color="accent">Register</a>
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>
