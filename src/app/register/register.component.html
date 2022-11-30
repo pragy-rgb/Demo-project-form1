@@ -1,92 +1,96 @@
 <mat-card>
-  <mat-card-title>Registration</mat-card-title>
-  <mat-card-content>
-    <form class="example-form" #registrationform="ngForm">
-      <mat-form-field class="width-100" appearance="fill">
-        <mat-label>Full name</mat-label>
-        <input
-          matInput
-          placeholder="Full name"
-          required
-          name="fullName"
-          [(ngModel)]="User.fullName"
-        />
-      </mat-form-field>
-      <br />
-      <br />
+  <mat-card class="form-field-wrapper"
+    ><mat-card>
+      <mat-card-title>Registration</mat-card-title>
+      <mat-card-content>
+        <form class="example-form" #registrationform="ngForm">
+          <mat-form-field class="width-100" appearance="fill">
+            <mat-label>Full name</mat-label>
+            <input
+              matInput
+              placeholder="Full name"
+              required
+              name="fullName"
+              [(ngModel)]="User.fullName"
+            />
+          </mat-form-field>
+          <br />
+          <br />
 
-      <mat-form-field class="width-100" appearance="fill">
-        <mat-label>Phone Number</mat-label>
-        <input
-          matInput
-          placeholder="Phone number"
-          required
-          type="number"
-          name="phoneNumber"
-          [(ngModel)]="User.phoneNumber"
-        />
-      </mat-form-field>
-      <br />
-      <br />
-      <mat-form-field class="width-100" appearance="fill">
-        <mat-label>Email Address</mat-label>
-        <input
-          matInput
-          placeholder="Email Address"
-          required
-          type="email"
-          name="emailAddress"
-          [(ngModel)]="User.emailAddress"
-        />
-      </mat-form-field>
-      <br />
-      <br />
-      <button mat-button [matMenuTriggerFor]="hobby">Hobby</button>
-      <mat-menu #hobby="matMenu">
-        <button mat-menu-item>Singing</button>
-        <button mat-menu-item>Dancing</button>
-        <button mat-menu-item>Cooking</button>
-        <button mat-menu-item>Reading</button>
-      </mat-menu>
+          <mat-form-field class="width-100" appearance="fill">
+            <mat-label>Phone Number</mat-label>
+            <input
+              matInput
+              placeholder="Phone number"
+              required
+              type="number"
+              name="phoneNumber"
+              [(ngModel)]="User.phoneNumber"
+            />
+          </mat-form-field>
+          <br />
+          <br />
+          <mat-form-field class="width-100" appearance="fill">
+            <mat-label>Email Address</mat-label>
+            <input
+              matInput
+              placeholder="Email Address"
+              required
+              type="email"
+              name="emailAddress"
+              [(ngModel)]="User.emailAddress"
+            />
+          </mat-form-field>
+          <br />
+          <br />
+          <button mat-button [matMenuTriggerFor]="hobby">Hobby</button>
+          <mat-menu #hobby="matMenu">
+            <button mat-menu-item>Singing</button>
+            <button mat-menu-item>Dancing</button>
+            <button mat-menu-item>Cooking</button>
+            <button mat-menu-item>Reading</button>
+          </mat-menu>
 
-      <br />
-      <br />
-      <mat-radio-group aria-label="Select an option">
-        <mat-radio-button value="1" isChecked>Male</mat-radio-button>
-        <mat-radio-button value="2">Female</mat-radio-button>
-      </mat-radio-group>
-      <br />
-      <br />
-      <mat-form-field class="width-100" appearance="fill">
-        <mat-label>Password</mat-label>
-        <input
-          matInput
-          placeholder="Password"
-          required
-          type="password"
-          name="password"
-          [(ngModel)]="User.password"
-        />
-      </mat-form-field>
-      <br />
-      <br />
+          <br />
+          <br />
+          <mat-radio-group aria-label="Select an option">
+            <mat-radio-button value="1" isChecked>Male</mat-radio-button>
+            <mat-radio-button value="2">Female</mat-radio-button>
+          </mat-radio-group>
+          <br />
+          <br />
+          <mat-form-field class="width-100" appearance="fill">
+            <mat-label>Password</mat-label>
+            <input
+              matInput
+              placeholder="Password"
+              required
+              type="password"
+              name="password"
+              [(ngModel)]="User.password"
+            />
+          </mat-form-field>
+          <br />
+          <br />
 
-      <mat-form-field class="width-100" appearance="fill">
-        <mat-label>Re-Password</mat-label>
-        <input
-          matInput
-          placeholder="Re-type Password"
-          required
-          type="password"
-          name="r-password"
-          [(ngModel)]="User.rPassword"
-        />
-      </mat-form-field>
-      <br />
-      <br />
-      <div>
-        <a mat-raised-button style="margin: 5px" color="accent">Register</a>
-      </div>
-    </form>
-  </mat-card-content>
-</mat-card>
+          <mat-form-field class="width-100" appearance="fill">
+            <mat-label>Re-Password</mat-label>
+            <input
+              matInput
+              placeholder="Re-type Password"
+              required
+              type="password"
+              name="r-password"
+              [(ngModel)]="User.rPassword"
+            />
+          </mat-form-field>
+          <br />
+          <br />
+          <div>
+            <a mat-raised-button style="margin: 5px" color="accent">Register</a>
+          </div>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </mat-card></mat-card
+>
