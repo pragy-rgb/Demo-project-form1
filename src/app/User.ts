@@ -1,8 +1,8 @@
 export class User {
-  fullName!: String;
-  emailAddress!: String;
-  phoneNumber!: String;
-  password!: string;
-  rPassword!: string;
-  hobby: string;
+  fullName!: undefined;
+  emailAddress!: undefined;
+  phoneNumber!: undefined;
+  password!: undefined;
+  rPassword!: undefined;
+  hobby: undefined;
 }
