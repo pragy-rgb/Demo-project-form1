@@ -8,7 +8,7 @@ import { EmployeeService } from '../../../shared/employee.service';
   styleUrls: ['./employee.component.css'],
 })
 export class EmployeeComponent implements OnInit {
-  constructor(private service: EmployeeService) {}
+  constructor(public service: EmployeeService) {}
 
   departments = [
     { id: 3, value: 'Dep 1' },
