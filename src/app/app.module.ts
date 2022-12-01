@@ -14,6 +14,7 @@ import { EmployeesComponent } from './employees/employees.component';
 import { EmployeeComponent } from './employees/employee/employee.component';
 import { EmployeeService } from '../shared/employee.service';
 import { MatNativeDateModule } from '@angular/material/core';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [AppComponent, EmployeesComponent, EmployeeComponent],
@@ -24,6 +25,7 @@ import { MatNativeDateModule } from '@angular/material/core';
     BrowserAnimationsModule,
     MatGridListModule,
     MatFormFieldModule,
+    MatInputModule,
     MatRadioModule,
     MatSelectModule,
     MatDatepickerModule,
