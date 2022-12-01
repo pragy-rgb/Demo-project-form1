@@ -7,12 +7,13 @@ import { AppComponent } from './app.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import {MatRadioModule} from '@angular/material/radio';
-import {MatSelectModule} from '@angular/material/select';
-import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatSelectModule } from '@angular/material/select';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 import { EmployeesComponent } from './employees/employees.component';
 import { EmployeeComponent } from './employees/employee/employee.component';
 import { EmployeeService } from '../shared/employee.service';
+import { MatNativeDateModule } from '@angular/material/core';
 
 @NgModule({
   declarations: [AppComponent, EmployeesComponent, EmployeeComponent],
@@ -25,10 +26,8 @@ import { EmployeeService } from '../shared/employee.service';
     MatFormFieldModule,
     MatRadioModule,
     MatSelectModule,
-    MatDatepickerModule,        // <----- import(must)
-   
-
-
+    MatDatepickerModule,
+    MatNativeDateModule, // <----- import(must)
   ],
   providers: [EmployeeService],
   bootstrap: [AppComponent],
