@@ -1,12 +1,13 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class EmployeeService {
-  constructor() {}
-
+  private baseUrl = 'EquifaxDemo/localhost:8083/post/Employee';
   form: FormGroup = new FormGroup({
     $key: new FormControl(null),
     fullName: new FormControl('', Validators.required),
@@ -31,5 +32,9 @@ export class EmployeeService {
       hireDate: '',
       isPermanent: false,
     });
+  }
+  constructor(private httpClient: HttpClient) {}
+  createEmployee(employee1: FormGroup): Observable<Object> {
+    return this.httpClient.post(`${this.baseUrl}`, employee1);
   }
 }

@@ -15,6 +15,7 @@ import { EmployeeComponent } from './employees/employee/employee.component';
 import { EmployeeService } from '../shared/employee.service';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatInputModule } from '@angular/material/input';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent, EmployeesComponent, EmployeeComponent],
@@ -29,7 +30,8 @@ import { MatInputModule } from '@angular/material/input';
     MatRadioModule,
     MatSelectModule,
     MatDatepickerModule,
-    MatNativeDateModule, // <----- import(must)
+    MatNativeDateModule,
+    HttpClientModule, // <----- import(must)
   ],
   providers: [EmployeeService],
   bootstrap: [AppComponent],
