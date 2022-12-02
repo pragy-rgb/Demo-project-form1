@@ -16,6 +16,7 @@ import { EmployeeService } from '../shared/employee.service';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatInputModule } from '@angular/material/input';
 import { HttpClientModule } from '@angular/common/http';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @NgModule({
   declarations: [AppComponent, EmployeesComponent, EmployeeComponent],
@@ -31,7 +32,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatSelectModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    HttpClientModule, // <----- import(must)
+    HttpClientModule,
+    MatCheckboxModule, // <----- import(must)
   ],
   providers: [EmployeeService],
   bootstrap: [AppComponent],

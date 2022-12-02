@@ -9,6 +9,7 @@ import { EmployeeService } from '../../../shared/employee.service';
 })
 export class EmployeeComponent implements OnInit {
   constructor(public service: EmployeeService) {}
+  fullName:string
 
   departments = [
     { id: 3, value: 'Dep 1' },
@@ -18,10 +19,12 @@ export class EmployeeComponent implements OnInit {
 
   ngOnInit() {}
   saveEmployee() {
-    this.service.createEmployee(this.service.form);
+    
+    console.log(this.service.form.value);
   }
   onClear() {
     this.service.form.reset();
     this.service.initializeFormGroup();
+    
   }
 }
