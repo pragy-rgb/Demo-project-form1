@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 
 import { EmployeeService } from '../../../shared/employee.service';
 
-
 @Component({
   selector: 'app-employee',
   templateUrl: './employee.component.html',
@@ -10,7 +9,6 @@ import { EmployeeService } from '../../../shared/employee.service';
 })
 export class EmployeeComponent implements OnInit {
   constructor(public service: EmployeeService) {}
-  
 
   departments = [
     { id: 3, value: 'Dep 1' },
@@ -20,12 +18,7 @@ export class EmployeeComponent implements OnInit {
 
   ngOnInit() {}
   saveEmployee() {
-    this.service.createEmployee(this.service.form).subscribe(
-      (data) => {
-        console.log(data);
-      },
-      (error) => console.log(error)
-    );
+    this.service.createEmployee(this.service.form);
   }
   onClear() {
     this.service.form.reset();
