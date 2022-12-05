@@ -7,7 +7,6 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class EmployeeService {
-  //private baseUrl = 'EquifaxDemo/localhost:8083/post/Employee';
   form: FormGroup = new FormGroup({
     $key: new FormControl(null),
     fullName: new FormControl('', Validators.required),
@@ -33,10 +32,4 @@ export class EmployeeService {
       isPermanent: false,
     });
   }
-  /*
-  constructor(private httpClient: HttpClient) {}
-  createEmployee(employee1: FormGroup): Observable<Object> {
-    return this.httpClient.post(`${this.baseUrl}`, employee1);
-  }
-  */
 }
